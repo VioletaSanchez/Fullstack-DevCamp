@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkpoint 1 Module 1 - CSS grid assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Used for google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- We use this for fontawesome icons -->
+    <script src="https://kit.fontawesome.com/0f3793b933.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div class="web-container">
+        <!-- We're making gridOne, with two paragraphs inside. Second paragraph's color will be blue with inline styling -->
+        <div class="gridOne">
+            <p>Hello World</p>
+            <p style="color:blue">My Fantastic Content</p>
+        </div>
+
+        <!-- We're making gridTwo here, which will have three child divs each with a unique class, each of one with a paragraph tag -->
+        <div class="gridTwo">
+            <div class="first-child">
+                <p>I am the first child.</p>
+            </div>
+            <div class="second-child">
+                <p>I am the second child.</p>
+            </div>
+            <div class="third-child">
+                <p>I am the third child.</p>
+            </div>
+        </div>
+
+        <!-- Making a grid with text and a resized image -->
+        <div class="gridThree">
+            <div class="further-first-child">
+                <p>
+                    I am a funny text.
+                </p>
+            </div>
+            <div class="further-second-child">
+                <img src="images/ice.avif" alt="">
+            </div>
+        </div>
+
+        <!-- We'll consider that every paragraph tag will contain some text to make them visible -->
+        <div class="gridFour">
+            <div class="even-further-first-child">
+                <p>I'm the top text.</p>
+            </div>
+            <div id="even-further-second-child">
+                <p>I'm the bottom-left text.</p>
+                <p>I'm the bottom-right text.</p>
+            </div>
+        </div>
+
+        <!-- We're making the fifth grid with text and then two images that we resize in main.css -->
+        <div class="gridFive">
+            <div class="somehow-even-further-first-child">
+                <p>I'm the top text.</p>
+            </div>
+            <div class="somehow-even-further-second-child">
+                <img src="images/lantern.avif" alt="">
+                <img src="images/street.avif" alt="">
+            </div>
+        </div>
+
+        <!-- We make the sixth grid with an icon and a paragraph that has its own font -->
+        <div class="gridSix">
+            <i class="fa fa-car"></i>
+            <p>Hello, this is a paragraph.</p>
+        </div>
+    </div>
+</body>
+</html>

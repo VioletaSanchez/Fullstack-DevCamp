@@ -1,0 +1,91 @@
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* We're making the columns equal size here */
+}
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr; /* We give this grid three columns, with the third one being twice as large as the others */
+}
+
+.first-child {
+    background-color: red;
+}
+
+.second-child {
+    background-color: blue;
+    color: white; /* We're making the leters white for readability */
+}
+
+.third-child {
+    background-color: yellow;
+}
+
+.gridThree {
+    display: grid;
+    grid-row: 2; /* We make the grid two rows here */
+    grid-template-rows: 1fr 3fr; /* This makes it so the second div is three times as large as the first div */
+    width: 500px;
+    height: 300px;
+}
+
+.gridThree img {
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+}
+
+/* We can use background-color to see the sizes of the rows. We can also use the inspect element to check for sizes
+.further-first-child {
+    background-color: red;
+}
+
+.further-second-child {
+    background-color: blue;
+}
+*/
+
+.gridFour {
+    display: grid;
+    width: 500px;
+    background-color: green;
+}
+
+/* We select this by its id instead of its class */
+#even-further-second-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridFive {
+    display: grid;
+    width: 500px;
+    background-color: grey;
+}
+
+/* We make the first item twice as large as the second item here*/
+.somehow-even-further-second-child {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Giving the images their own width and height */
+.somehow-even-further-second-child img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* The grid will whos two columns, second column will be three times as big as the first one */
+.gridSix {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    background-color: lightgray;
+}
+
+/* We give the paragraph its own font */
+.gridSix p {
+    font-family: "Lobster Two", sans-serif;;
+}
